@@ -12,7 +12,7 @@ To be able to use this application, just download the whole project and use any 
 ``` bundle install ```<br>
 In the terminal to install everything that I used and after that type:<br>
 ```webpacker:install```<br>
-To finish with, just type:
+To finish with, just type:<br>
 ```rail s```<br> 
 to initiate the server.<br><br>
 and goes to your browser of preference and type localhost:3000, if everything is working fine you should see this screen:<br><br>
