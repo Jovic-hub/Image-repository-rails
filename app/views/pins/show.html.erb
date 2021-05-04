@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @pin.title %>
+</p>
+
+<% (0...@pin.images.count).each do |image| %>
+  <div style = "width: 100%; height: auto;">
+  <%= image_tag(@pin.images[image], style:'width:40%; height: auto') %><br><br>
+  </div>
+<% end %>
+
+<p>
+  <strong>Caption:</strong>
+  <%= @pin.caption %>
+</p>
+
+<%= link_to 'Edit', edit_pin_path(@pin) %> |
+<%= link_to 'Back', pins_path %>
