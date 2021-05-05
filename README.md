@@ -49,7 +49,11 @@ so the user can't upload pins if not every section is completed.<br><br>
 ```secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>```<br>
 ```region: us-east-2```<br>
 ```bucket: imagerepository-jovic```)<br><br>
-  
+* Test driven environment<br>
+to be able to test the application and fix failures, I used the RSpec gem. <br>
+In this application, I tested 1 model, and 4 views, here is the RSpec test of the pin model:<br>
+![](images/pin_rspec.png)<br><br>
+and all of the tests you can find in the /spec folder<br>
 * Here are some screenshots of the application: <br><br>
 * Sign In Page<br><br>
 ![](images/login.png)<br><br>
