@@ -8,7 +8,7 @@ Yarn version: 1.22.10<br>
 
 * How to use it
 
-To be able to use this application, just download the whole project and use any terminal to go to project's root folder. Run:<br>
+To be able to use this application, just download the whole project and use any terminal to go to the project's root folder. Run:<br>
 ``` bundle install ```<br>
 In the terminal to install everything that I used and after that type:<br>
 ```rails webpacker:install```<br>
