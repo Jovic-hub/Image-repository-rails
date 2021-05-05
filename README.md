@@ -43,12 +43,12 @@ available to everyone.<br>
 The images are completely safe stored in the amazon s3 service, to be safe uploading in the repository, I added validates statements in the pin.rb <br>
 so the user can't upload pins if not every section is completed.<br><br>
 ![](images/validate.png)<br><br>
-(```amazon:<br>
-service: S3
-access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
-secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
-region: us-east-2
-bucket: imagerepository-jovic```)
+```amazon:```<br>
+```service: S3```<br>
+```access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>```<br>
+```secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>```<br>
+```region: us-east-2```<br>
+```bucket: imagerepository-jovic```)<br><br>
   
 * Here are some screenshots of the application: <br><br>
 * Sign In Page<br><br>
