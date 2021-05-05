@@ -43,7 +43,7 @@ available to everyone.<br>
 The images are completely safe stored in the amazon s3 service, to be safe uploading in the repository, I added validates statements in the pin.rb <br>
 so the user can't upload pins if not every section is completed.<br><br>
 ![](images/validate.png)<br><br>
-(```amazon:
+(```amazon:<br>
 service: S3
 access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
 secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
