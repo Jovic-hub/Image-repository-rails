@@ -11,7 +11,8 @@ Yarn version: 1.22.10<br>
 To be able to use this application, just download the whole project and use any terminal to go to project's root folder(ImageRepository). Run:<br>
 ``` bundle install ```<br>
 In the terminal to install everything that I used and after that type:<br>
-```webpacker:install```<br>
+```rails webpacker:install```<br>
+```rails db:migrate RAILS_ENV=development```<br>
 To finish with, just type:<br>
 ```rail s```<br> 
 to initiate the server.<br><br>
@@ -39,9 +40,16 @@ available to everyone.<br>
 
 * secure uploading and stored images <br>
 
-The images are completely safe stored in the active storage, to be safe uploading in the repository, I added validates statements in the pin.rb <br>
+The images are completely safe stored in the amazon s3 service, to be safe uploading in the repository, I added validates statements in the pin.rb <br>
 so the user can't upload pins if not every section is completed.<br><br>
 ![](images/validate.png)<br><br>
+```amazon:```<br>
+```service: S3```<br>
+```access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>```<br>
+```secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>```<br>
+```region: us-east-2```<br>
+```bucket: imagerepository-jovic```)<br><br>
+  
 * Here are some screenshots of the application: <br><br>
 * Sign In Page<br><br>
 ![](images/login.png)<br><br>
