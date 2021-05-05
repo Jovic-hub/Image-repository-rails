@@ -11,7 +11,8 @@ Yarn version: 1.22.10<br>
 To be able to use this application, just download the whole project and use any terminal to go to project's root folder(ImageRepository). Run:<br>
 ``` bundle install ```<br>
 In the terminal to install everything that I used and after that type:<br>
-```webpacker:install```<br>
+```rails webpacker:install```<br>
+```rails db:migrate RAILS_ENV=development```<br>
 To finish with, just type:<br>
 ```rail s```<br> 
 to initiate the server.<br><br>
