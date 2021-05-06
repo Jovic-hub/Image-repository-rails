@@ -23,4 +23,5 @@ RSpec.describe Pin, type: :model do
     pin.caption = "has a caption"
     expect(pin).to be_valid
   end
+
 end
